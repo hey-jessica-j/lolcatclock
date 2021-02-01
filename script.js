@@ -107,4 +107,26 @@ var partyEvent = function ()
 			}
 };
 
-partyTimeButton.addEventListener("click", partyEvent);
+partyTimeButton.addEventListener("click", partyEvent); 
+
+
+var wakeUpTimeSelector = document.getElementById("wakeUpTimeSelector");
+var lunchTimeSelector = document.getElementById("lunchTimeSelector");
+var napTimeSelector = document.getElementById("napTimeSelector");
+
+var wakeUpEvent = function () 
+	{
+	wakeupTime = wakeUpTimeSelector.value; 
+	};
+var lunchEvent = function () 
+	{
+	lunchTime = lunchTimeSelector.value; 
+	};
+var napEvent = function () 
+	{
+	napTime = napTimeSelector.value; 
+	};
+
+wakeUpTimeSelector.addEventListener("change", wakeUpEvent);
+lunchTimeSelector.addEventListener("change", lunchEvent);
+napTimeSelector.addEventListener("change", napEvent);
